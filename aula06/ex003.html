@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meu primeiro programa</title>
-    <link rel="shortcut icon" href="javascript.ico" type="image/x-icon">
+<link rel="shortcut icon" href="javascript.ico" type="image/x-icon">
+    
     <style>
         body {
          font: normal 2em arial;
@@ -19,9 +20,10 @@
     <p>Já me livrei da maldição.</p>
 
     <script>
-        window.alert('Minha primeira mensagem!')
-        window.confirm('Está gostando de JS?')
-        window.prompt('Qual é o seu nome?')
+    var n1 = Number(window.prompt('Digite um número:'))
+    var n2 = Number(window.prompt('Digite outro número:'))
+    var s = n1 + n2  
+    window.alert(`A soma entre ${n1} e ${n2} é igual a ${s}`) 
     </script>
 </body>
 </html>
