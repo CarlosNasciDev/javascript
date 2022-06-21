@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio do exercício 009</title>
+    <style>
+        body {
+            font: normal 1em Arial, Helvetica, sans-serif;
+            text-align: center;
+        }
+
+        h1 {
+            background-color: grey;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Você é Brasileiro?</h1>
+    <p>
+        Em que país você nasceu? <input type="text" name="pais" id="pais">
+        <input type="button" value="verificar" onclick="clicar()">
+    </p>
+    <div id="res">
+
+    </div>
+
+    <script>
+        function clicar() {
+            var meupais = document.getElementById('pais')
+            var res = document.getElementById('res')
+            var nacao = String (meupais.value)
+            res.innerHTML = ` <p><strong>${nacao}</strong> é o lugar onde você nasceu.</p> `
+            if(nacao == 'Brasil'){
+                res.innerHTML += '<p>Você é <strong>BRASILEIRO</strong>.</p>'
+            } else {
+                res.innerHTML += '<p>Você é <strong>ESTRANGEIRO</strong>.</p>'
+            }
+            res.innerHTML += ' <p>Independente de onde nasceu, você será sempre bem vindo.</p> '
+        }
+    </script>
+</body>
+</html>
