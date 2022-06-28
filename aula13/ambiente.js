@@ -1,8 +1,10 @@
-var c = 1
+var fatia = 1
 do{
-    console.log(`Passo ${c} `)
-    c++
-} while (c <= 8) 
+    console.log(`Comeu ${fatia} fatias. `)
+    fatia++
+} while (fatia <= 8) {
+    console.log('Já acabou a pizza?')
+}
 
 
 
